@@ -1,0 +1,8 @@
+# .streamlit/config.toml (Tema Grok)
+
+[theme]
+primaryColor="#8A2BE2"        # Roxo/Azul vibrante
+backgroundColor="#0B0B0F"      # Fundo quase preto
+secondaryBackgroundColor="#1E1E2E" # Cor de fundo dos componentes
+textColor="#FFFFFF"          # Texto branco
+font="sans serif"

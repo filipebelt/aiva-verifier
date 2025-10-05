@@ -1,0 +1,17 @@
+# Ambiente Virtual
+venv/
+.venv/
+
+# Arquivos de Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos temporários que criamos
+create_file.py
+teste.py
+
+# Arquivos de Sistema
+.DS_Store
+Thumbs.db

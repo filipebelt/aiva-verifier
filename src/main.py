@@ -1,0 +1,1 @@
+print("Detector AI iniciado!") 
