@@ -7,8 +7,6 @@
 
 A web application built with Python and Streamlit to detect whether images and videos are AI-generated.
 
-![AIVA Screenshot](https://i.imgur.com/eaf53e.png) 
-*The AIVA interface in its Grok-inspired dark mode design.*
 
 ---
 
