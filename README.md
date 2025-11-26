@@ -1,66 +1,104 @@
-# AIVA - Artificial Intelligence Verification Assistant
+<h1 align="center">🧠 AIVA – Assistente de Autenticação Visual por IA</h1>
+<p align="center">
+  <em>Sistema avançado que detecta se imagens ou vídeos foram gerados por Inteligência Artificial ou capturados por câmeras reais.</em>
+</p>
 
-![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.50-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.8-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-FFD21E?style=for-the-badge)
-
-A web application built with Python and Streamlit to detect whether images and videos are AI-generated.
-
-
----
-
-## 📜 About The Project
-
-**AIVA** (Artificial Intelligence Verification Assistant) is a powerful and intuitive tool designed to combat visual misinformation. In a world where AI-generated content is becoming increasingly realistic, AIVA provides a quick way to verify the authenticity of visual media by analyzing images and videos for patterns characteristic of AI generation.
-
-This project was developed as a complete end-to-end solution, from creating the user interface to integrating a pre-trained Deep Learning model.
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Online-brightgreen?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Google%20Cloud-Cloud%20Run-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HuggingFace-Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
+</p>
 
 ---
 
-## ✨ Key Features
+## 🚀 Demonstração ao Vivo
 
-* **Image Analysis:** Upload `JPG`, `JPEG`, or `PNG` files for instant analysis.
-* **Video Analysis:** Supports `MP4`, `MOV`, and `AVI` files with frame-by-frame analysis and a final report.
-* **Modern Interface:** A responsive and minimalist design inspired by modern AI applications.
-* **AI Model:** Utilizes an image classification model (Vision Transformer) from the Hugging Face platform.
+<p align="center">
+  <a href="https://aiva-verifier-999132669974.us-central1.run.app" target="_blank">
+    <img src="https://img.shields.io/badge/🔗%20ABRIR%20AIVA%20AGORA-8A2BE2?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMjFDMTcuNTIyMSAyMSAyMSAxNy41MjIxIDIxIDEyQzIxIDYuNDc3NzkgMTcuNTIyMSAzIDEyIDNDNi40Nzc3OSAzIDMgNi40Nzc3OSAzIDEyQzMgMTcuNTIyMSA2LjQ3Nzc5IDIxIDEyIDIxWk0xMiAyMUM2LjQ3Nzc5IDIxIDMgMTcuNTIyMSAzIDEyQzMgNi40Nzc3OSA2LjQ3Nzc5IDMgMTIgM0MxNy41MjIxIDMgMjEgNi40Nzc3OSAyMSAxMkMyMSAxNy41MjIxIDE3LjUyMjEgMjEgMTIgMjFaIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==" />
+  </a>
+</p>
+
+Faça upload de qualquer **imagem** ou **vídeo** e receba a classificação imediatamente.
+
+<p align="center">
+  <img src="docs/print1.png" width="80%" />
+</p>
+
+<p align="center">
+  <img src="docs/print2.png" width="80%" />
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+## 📌 Visão Geral
 
-* **Language:** Python 3.12
-* **Web Framework:** Streamlit
-* **Artificial Intelligence:** PyTorch & Transformers (Hugging Face)
-* **Image/Video Processing:** OpenCV & Pillow
-* **Other Libraries:** Numpy, Pandas
+A **AIVA** (Artificial Intelligence Visual Authentication) é uma solução completa que identifica padrões característicos de conteúdo gerado por IA.
+
+Ela detecta se um conteúdo é:
+
+- ✔️ **Gerado por Inteligência Artificial**, ou  
+- ✔️ **Capturado por um dispositivo real**
+
+O sistema combina:
+
+- **Visão computacional**  
+- **Modelos de Deep Learning (HuggingFace)**  
+- **Infraestrutura serverless do Google Cloud**
 
 ---
 
-## 🚀 How To Run
+## 🧠 Como funciona
 
-To run this project locally, follow these steps:
+### 🔥 Modelo HuggingFace
+- Detector de mídia gerada por IA  
+- Extração de features  
+- Análise de embeddings  
+- Probabilidade final **IA vs Humano**
 
-1.  **Clone the repository:**
-    ```sh
-    git clone [https://github.com/filipebelt/aiva.git](https://github.com/filipebelt/aiva.git)
-    cd aiva
-    ```
+### ⚡ Interface Streamlit
+- Design limpo e moderno  
+- Suporte a vídeos e imagens  
+- Respostas em tempo real  
 
-2.  **Create and activate a virtual environment:**
-    ```sh
-    python -m venv venv
-    venv\Scripts\activate.bat
-    ```
+### ☁️ Arquitetura Google Cloud
+- Cloud Run (serverless & escalável)  
+- Cloud Storage (armazenamento temporário)  
+- IAM seguro  
+- Baixa latência e alta disponibilidade  
 
-3.  **Install the dependencies:**
-    ```sh
-    pip install -r requirements.txt
-    ```
+---
 
-4.  **Run the Streamlit app:**
-    ```sh
-    streamlit run src/ui_streamlit.py
-    ```
+## 🛠️ Tecnologias Utilizadas
 
-The application will be available at `http://localhost:8501`.
+### **Inteligência Artificial**
+- PyTorch  
+- Transformers (HuggingFace)  
+- Vision Transformer Models  
+
+### **Backend**
+- Python  
+- Streamlit  
+- Processamento de vídeo  
+- Sistema de caching inteligente  
+
+### **Cloud & DevOps**
+- Docker  
+- Google Cloud Run  
+- Cloud Storage  
+- CI/CD (GitHub Actions Ready)  
+
+---
+
+## ✨ Funcionalidades
+
+- 🖼️ **Análise de Imagens** (PNG, JPG, JPEG)  
+- 🎥 **Análise de Vídeos** (MP4, MOV, AVI)  
+- ⚡ Resultados rápidos e precisos  
+- 📊 Probabilidade clara (ex.: 62% IA)  
+- 🖥️ Interface moderna  
+
+---
+
+## 📂 Estrutura do Projeto
+
