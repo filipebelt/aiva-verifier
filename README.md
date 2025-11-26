@@ -1,31 +1,32 @@
 # AIVA – AI Verifier
 
-Sistema de detecção que identifica se imagens ou vídeos foram gerados por Inteligência Artificial ou se são reais.
+Sistema de detecção desenvolvido para identificar se imagens ou vídeos foram gerados por Inteligência Artificial ou se são conteúdos reais.
 
 ---
 
-### Badges
+### Tecnologias / Status
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
-![Cloud Run](https://img.shields.io/badge/Deploy-Google%20Cloud%20Run-brightgreen)
-![Status](https://img.shields.io/badge/Online-Yes-success)
+![Cloud Run](https://img.shields.io/badge/Deploy-Google%20Cloud%20Run-green)
+![Status](https://img.shields.io/badge/Online-Sim-success)
 
 ---
 
-### Testar Aplicação
+### Acessar Aplicação
 
-[![Acessar AIVA](https://img.shields.io/badge/Acessar%20Aplicação-1a73e8?style=for-the-badge&logo=google-chrome&logoColor=white)](https://aiva-verifier-999132669974.us-central1.run.app/)
+[![Acessar Aplicação](https://img.shields.io/badge/ABRIR%20AIVA-1a73e8?style=for-the-badge&logo=google-chrome&logoColor=white)](https://aiva-verifier-999132669974.us-central1.run.app/)
 
 ---
 
 ## Índice
+
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Demonstração](#demonstração)
 - [Como Rodar Localmente](#como-rodar-localmente)
-- [Rodando com Docker](#rodando-com-docker)
+- [Docker](#docker)
 - [Deploy no Google Cloud](#deploy-no-google-cloud)
 - [Status do Projeto](#status-do-projeto)
 - [Autor](#autor)
@@ -34,20 +35,20 @@ Sistema de detecção que identifica se imagens ou vídeos foram gerados por Int
 
 ## Sobre o Projeto
 
-AIVA (Artificial Intelligence Verification Assistant) é um sistema desenvolvido em Python capaz de identificar se uma **imagem ou vídeo** foi gerado por ferramentas de IA ou se é um conteúdo real.
+AIVA (Artificial Intelligence Verification Assistant) é um sistema em Python que analisa imagens ou vídeos para determinar se foram produzidos por modelos de IA ou se são reais.
 
-O sistema utiliza modelos de visão computacional, análise de padrões sintéticos, ruído e técnicas de pré-processamento para entregar uma classificação confiável.
+O projeto utiliza técnicas de visão computacional, análise de padrões sintéticos, detecção de ruído e pré-processamento para gerar uma classificação confiável e interpretável.
 
 ---
 
 ## Funcionalidades
 
-- Detecção de imagens reais vs. geradas por IA  
+- Detecção de imagens geradas por IA  
 - Análise de vídeos  
-- Probabilidade e explicação simplificada  
+- Probabilidade da classificação  
 - Interface Web via Streamlit  
-- Execução em Docker  
-- Deploy automatizado e escalável no Google Cloud Run  
+- Execução via Docker  
+- Deploy escalável no Google Cloud Run  
 
 ---
 
@@ -60,8 +61,8 @@ O sistema utiliza modelos de visão computacional, análise de padrões sintéti
 - TensorFlow / Keras (ou PyTorch)  
 - Docker  
 - Google Cloud Run  
-- Google Cloud Artifact Registry  
 - Google Cloud Build  
+- Google Artifact Registry  
 
 ---
 
@@ -84,7 +85,7 @@ pip install -r requirements.txt
 streamlit run main.py
 ---
 
-## Rodando com Docker
+## Docker
 
 docker build -t aiva-verifier .
 docker run -p 8080:8080 aiva-verifier
@@ -96,10 +97,10 @@ docker run -p 8080:8080 aiva-verifier
 Pipeline utilizado:
 
 1. Build via Cloud Build  
-2. Armazenamento da imagem no Artifact Registry  
+2. Armazenamento no Artifact Registry  
 3. Deploy no Cloud Run  
 
-Comando usado:
+Comando de deploy:
 
 gcloud run deploy aiva-verifier \
   --image=gcr.io/SEU_PROJETO/aiva \
@@ -112,15 +113,14 @@ gcloud run deploy aiva-verifier \
 
 - Online e funcional  
 - Versão: 1.0.0  
-- Recebendo melhorias contínuas  
+- Melhorias contínuas sendo adicionadas  
 
 ---
 
 ## Autor
 
 **Filipe Corrêa**  
-Estudante de Engenharia de Software — Cloud — IA  
+Estudante de Engenharia de Software — Cloud — Inteligência Artificial  
 
-🔗 LinkedIn: https://www.linkedin.com/in/filipebelt/  
-🔗 GitHub: https://github.com/filipebelt
-
+LinkedIn: https://www.linkedin.com/in/filipebelt/  
+GitHub: https://github.com/filipebelt
