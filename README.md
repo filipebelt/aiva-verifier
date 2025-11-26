@@ -34,6 +34,7 @@
 
 ---
 
+
 ## 🧠 **Sobre o Projeto**
 AIVA (Artificial Intelligence Verification Assistant) é uma ferramenta criada para identificar se **imagens ou vídeos** foram gerados por IA (como Midjourney, DALL·E, Runway, etc.) ou se são conteúdos **reais**.
 
