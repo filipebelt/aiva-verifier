@@ -85,6 +85,8 @@ pip install -r requirements.txt
 streamlit run main.py
 ---
 
+---
+
 ## Docker
 
 docker build -t aiva-verifier .
@@ -96,11 +98,11 @@ docker run -p 8080:8080 aiva-verifier
 
 Pipeline utilizado:
 
-1. Build via Cloud Build  
-2. Armazenamento no Artifact Registry  
-3. Deploy no Cloud Run  
+1. Build com Cloud Build  
+2. Imagem armazenada no Artifact Registry  
+3. Deploy realizado no Cloud Run  
 
-Comando de deploy:
+Comando de deploy (exemplo):
 
 gcloud run deploy aiva-verifier \
   --image=gcr.io/SEU_PROJETO/aiva \
@@ -111,16 +113,16 @@ gcloud run deploy aiva-verifier \
 
 ## Status do Projeto
 
-- Online e funcional  
+- Projeto online e funcional  
 - Versão: 1.0.0  
-- Melhorias contínuas sendo adicionadas  
+- Melhorias contínuas em desenvolvimento  
 
 ---
 
 ## Autor
 
-**Filipe Corrêa**  
-Estudante de Engenharia de Software — Cloud — Inteligência Artificial  
+Filipe Corrêa  
+Engenharia de Software • Cloud • Inteligência Artificial  
 
 LinkedIn: https://www.linkedin.com/in/filipebelt/  
 GitHub: https://github.com/filipebelt
