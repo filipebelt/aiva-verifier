@@ -68,7 +68,11 @@ Ele utiliza modelos de visão computacional, análise de ruído, padrões sinté
 
 ## 🖼️ Demonstração
 
-> Futuramente você pode adicionar aqui prints ou GIF da interface.
+### 📸 Interface da Aplicação
+
+![Print 1](docs/Captura%20de%20tela%202025-11-26%20142323.png)
+
+![Print 2](docs/Captura%20de%20tela%202025-11-26%20142402.png)
 
 ---
 
