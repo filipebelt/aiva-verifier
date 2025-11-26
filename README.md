@@ -1,27 +1,26 @@
-<h1 align="center">🤖 AIVA – AI Verifier</h1>
+# 🤖 AIVA – AI Verifier
 
-<p align="center">
-  <strong>Detecte se uma imagem ou vídeo foi gerado por Inteligência Artificial ou é real.</strong>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10-blue" />
-  <img src="https://img.shields.io/badge/Framework-Streamlit-red" />
-  <img src="https://img.shields.io/badge/Deploy-Google%20Cloud%20Run-brightgreen" />
-  <img src="https://img.shields.io/badge/Status-Online-success" />
-</p>
-
-<br>
-
-<p align="center">
-  <a href="https://aiva-verifier-999132669974.us-central1.run.app/">
-    <img src="https://img.shields.io/badge/🌐 Testar%20Aplicação-AIVA-blue?style=for-the-badge" />
-  </a>
-</p>
+**Detecte se uma imagem ou vídeo foi gerado por Inteligência Artificial ou é real.**
 
 ---
 
-## 📌 **Índice**
+### 🏷️ Badges
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
+![Deploy](https://img.shields.io/badge/Deploy-Google%20Cloud%20Run-brightgreen)
+![Status](https://img.shields.io/badge/Status-Online-success)
+
+---
+
+### 🌐 Testar Aplicação
+
+[![Testar AIVA](https://img.shields.io/badge/🌐%20TESTAR%20AIVA-0000FF?style=for-the-badge)](https://aiva-verifier-999132669974.us-central1.run.app/)
+
+---
+
+## 📌 Índice
+
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Funcionalidades](#-funcionalidades)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
@@ -34,47 +33,74 @@
 
 ---
 
+## 🧠 Sobre o Projeto
 
-## 🧠 **Sobre o Projeto**
-AIVA (Artificial Intelligence Verification Assistant) é uma ferramenta criada para identificar se **imagens ou vídeos** foram gerados por IA (como Midjourney, DALL·E, Runway, etc.) ou se são conteúdos **reais**.
+AIVA (Artificial Intelligence Verification Assistant) é um sistema desenvolvido em Python que identifica se **imagens ou vídeos** foram gerados por Inteligência Artificial ou são reais.
 
-O sistema utiliza modelos de visão computacional e técnicas de análise estatística de ruído e padrões artificiais presentes em conteúdo sintético.
-
----
-
-## ⚙️ **Funcionalidades**
-- 📸 **Detecção de imagens artificiais ou reais**
-- 🎥 **Análise de vídeos**
-- 🔍 **Probabilidade e explicação da classificação**
-- 🌐 **Interface fácil de usar via Streamlit**
-- 🚀 **Deploy automático e escalável no Google Cloud Run**
-- 🐳 **Container Docker pronto para rodar em qualquer ambiente**
+Ele utiliza modelos de visão computacional, análise de ruído, padrões sintéticos e técnicas de pré-processamento para classificar o conteúdo com alta precisão.
 
 ---
 
-## 🚀 **Tecnologias Utilizadas**
-- **Python 3**
-- **Streamlit**
-- **OpenCV**
-- **NumPy / Pillow**
-- **TensorFlow/Keras** (ou PyTorch, dependendo da versão final)
-- **Docker**
-- **Google Cloud Run**
-- **Google Cloud Artifact Registry**
-- **Google Cloud Build**
+## ⚙️ Funcionalidades
+
+- 📸 Detecção de imagens reais vs. IA  
+- 🎥 Análise de vídeos  
+- 🔍 Probabilidade e explicação simplificada  
+- 🌐 Interface com Streamlit  
+- 🐳 Docker para rodar em qualquer ambiente  
+- ☁️ Deploy automatizado no Google Cloud Run  
 
 ---
 
-## 🖼️ **Demonstração**
-> *Adicione aqui futuramente prints ou GIF de demonstração da interface.*
+## 🚀 Tecnologias Utilizadas
+
+- Python 3
+- Streamlit
+- OpenCV
+- NumPy / Pillow
+- TensorFlow / Keras (ou PyTorch)
+- Docker
+- Google Cloud Run
+- Google Cloud Artifact Registry
+- Google Cloud Build
 
 ---
 
-## 🛠 **Como Rodar Localmente**
+## 🖼️ Demonstração
+
+> Futuramente você pode adicionar aqui prints ou GIF da interface.
+
+---
+
+## 🛠 Como Rodar Localmente
+
 ```bash
 git clone https://github.com/filipebelt/aiva-verifier
 cd aiva-verifier
 pip install -r requirements.txt
 streamlit run main.py
+---
 
+## 🐳 Rodando com Docker
 
+docker build -t aiva-verifier .
+docker run -p 8080:8080 aiva-verifier
+
+---
+
+## ☁️ Deploy no Google Cloud
+
+Pipeline utilizado:
+
+1. Build via Cloud Build  
+2. Armazenamento da imagem no Artifact Registry  
+3. Deploy no Cloud Run  
+
+Comando usado:
+
+gcloud run deploy aiva-verifier \
+  --image=gcr.io/SEU_PROJETO/aiva \
+  --region=us-central1 \
+  --platform=managed
+
+---
